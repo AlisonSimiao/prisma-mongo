@@ -1,0 +1,22 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "Prisma Studio": {
+      "name": "Prisma Studio",
+      "command": "npx prisma studio",
+      "runAtStart": true
+    },
+    "Postgres": {
+      "name": "Postgres",
+      "command": "docker-compose -f .codesandbox/docker-compose.yml up",
+      "runAtStart": true
+    },
+    "Script": {
+      "name": "Run Script",
+      "command": "npx ts-node script.ts"
+    }
+  }
+}
